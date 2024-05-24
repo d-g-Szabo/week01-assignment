@@ -6,7 +6,19 @@
   scroll-behavior: smooth;
 }
 
+/* reset the button style */
+button {
+  all: unset;
+}
+
 a {
+  text-decoration-line: none;
+  font-weight: bold;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+button {
   text-decoration-line: none;
   font-weight: bold;
   color: whitesmoke;
@@ -92,10 +104,10 @@ main {
   gap: 0.9rem;
 }
 
-.title a {
+.title button {
   padding: 1rem;
   padding-left: 2rem;
-  width: 16.7rem;
+  width: 13.5rem;
   letter-spacing: 0.1rem;
   font-size: 0.9em;
   margin-top: 0.9rem;
@@ -103,7 +115,7 @@ main {
   border-width: 2px;
 }
 
-.title a:hover {
+.title button:hover {
   background-color: whitesmoke;
   color: black;
 }
@@ -126,6 +138,7 @@ main {
 .cookie button {
   background-color: black;
   border-style: solid;
+  border-width: 2px;
   color: whitesmoke;
   text-transform: uppercase;
   font-weight: 700;
