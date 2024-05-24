@@ -3,6 +3,7 @@
 * {
   font-family: sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -10,10 +11,6 @@ a {
   font-weight: bold;
   color: whitesmoke;
   text-transform: uppercase;
-}
-
-nav a:hover {
-  text-decoration-line: underline;
 }
 
 h1 {
@@ -50,6 +47,10 @@ nav {
   flex-direction: row;
   gap: 2.3rem;
   font-size: 0.85em;
+}
+
+nav a:hover {
+  text-decoration-line: underline;
 }
 
 main {
