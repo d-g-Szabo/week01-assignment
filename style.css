@@ -108,6 +108,36 @@ main {
   color: black;
 }
 
+.cookie {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cookie button {
+  background-color: black;
+  border-style: solid;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 0.1rem;
+}
+
+.cookie button:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
 footer {
   background-color: black;
   text-align: center;
