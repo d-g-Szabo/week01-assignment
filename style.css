@@ -157,3 +157,24 @@ footer {
   color: #555;
   padding: 40px;
 }
+
+@media only screen and (max-width: 660px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+  .cookie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .cookie button {
+    height: fit-content;
+    padding: 0.5rem;
+  }
+}
