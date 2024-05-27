@@ -14,8 +14,6 @@ function addContent() {
     `;
   document.querySelector(".home").appendChild(content);
   document.getElementById("home-button").innerText = "Hide Content";
-  //   todo - fix css for content
-  //   document.querySelector(".content").css
 }
 
 function removeContent() {
