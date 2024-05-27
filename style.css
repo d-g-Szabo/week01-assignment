@@ -125,13 +125,17 @@ main {
   bottom: 100px;
   left: 3rem;
   width: 80%;
+  /* Apply the fadeIn animation to the content */
   animation: fadeIn 1s;
 }
 
+/* Define the fadeIn animation */
 @keyframes fadeIn {
+  /* Start the animation with the content fully transparent */
   from {
     opacity: 0;
   }
+  /* End the animation with the content fully visible */
   to {
     opacity: 1;
   }
@@ -175,6 +179,7 @@ footer {
   padding: 40px;
 }
 
+/* Media queries, on screens with smaller width then 661px these rules will be applied, so phones and smaller tablets will have a screen-friendly experience */
 @media only screen and (max-width: 660px) {
   header {
     flex-direction: column;
