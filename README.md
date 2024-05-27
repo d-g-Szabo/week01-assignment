@@ -20,6 +20,7 @@ I also added extra JS functionalities:
 # Reflections:
 
 What went really well and what could have gone better?
+
 The html and css copy of the website went really well in my opinion. Cookie banner is good but could be improved so it wont ask on every refresh. Media queries are decent for this website, but will need to dug more deeper into this for more complecated sites. Button fuctionality is working great tho I the code could be rewriten more efficiently.
 
 Useful external sources:
@@ -40,10 +41,12 @@ Useful external sources:
 - https://www.thedrum.com/opinion/2024/02/28/space-travel-the-next-frontier-tourism-it-marketing-opportunity
 
 Describing errors or bugs you encountered:
+
 Border width tricked me a little bit at the beggining.
 Spacing with flexbox always tricky at the start.
 Animations were hard so I went with css fade in.
 With JS got some Node errors.
 
 Requesting feedback about a specific part of your submission:
+
 I would love some extra feedback on the JS and Media queries and animation. Animation only on fade in but not fade out.
