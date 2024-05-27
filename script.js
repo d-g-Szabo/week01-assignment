@@ -1,13 +1,19 @@
+// Function to accept cookies
 function acceptCookies() {
+  // Set cookiesAccepted to true
   cookiesAccepted = true;
   console.log("Cookies accepted!");
+  // Hide the cookie notification
   document.querySelector(".cookie").style.display = "none";
 }
 
+// Function to add content to a specified place
 function addContent(placeName, buttonName) {
   const content = document.createElement("div");
+  // Add the 'content' class to the div
   content.classList.add("content");
 
+  // Check what the placeName is and add the content accordingly
   if (placeName === ".home") {
     content.innerHTML = `
         <p>
@@ -28,34 +34,45 @@ function addContent(placeName, buttonName) {
         `;
   }
 
+  // Append the created content to the specified place in the document
   document.querySelector(placeName).appendChild(content);
+  // Change the text of the button to "Hide Content"
   document.getElementById(buttonName).innerText = "Hide Content";
 }
 
+// Function to remove content from a specified place
 function removeContent(placeName, buttonName) {
+  // Remove the last child of the specified place in the document (i.e., the content div)
   document
     .querySelector(placeName)
     .removeChild(document.querySelector(placeName).lastChild);
+  // Change the text of the button back to "Read More"
   document.getElementById(buttonName).innerText = "Read More";
 }
 
 // Set cookies to false initially
 let cookiesAccepted = false;
 
+// Get the accept cookies button from the HTML
 const acceptCookiesButton = document.getElementById("accept-cookies");
 
+// Add an event listener to the accept cookies button that calls the acceptCookies function when clicked
 acceptCookiesButton.addEventListener("click", acceptCookies);
 
+//////////////////////////
 // Add event listener to the home-button
 const readMoreButton = document.getElementById("home-button");
 
 let homeButtonClicked = false;
 
+// Add an event listener to the read more button
 readMoreButton.addEventListener("click", function () {
   if (!homeButtonClicked) {
+    // If the home button has not been clicked, add content and set homeButtonClicked to true
     addContent(".home", "home-button");
     homeButtonClicked = true;
   } else {
+    // If the home button has been clicked, remove content and set homeButtonClicked to false
     removeContent(".home", "home-button");
     homeButtonClicked = false;
   }
