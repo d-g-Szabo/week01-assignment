@@ -125,6 +125,16 @@ main {
   bottom: 100px;
   left: 3rem;
   width: 80%;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .cookie {
