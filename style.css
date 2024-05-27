@@ -120,6 +120,13 @@ main {
   color: black;
 }
 
+.content {
+  position: absolute;
+  bottom: 100px;
+  left: 3rem;
+  width: 80%;
+}
+
 .cookie {
   position: fixed;
   bottom: 0;
